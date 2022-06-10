@@ -1,7 +1,7 @@
 {
     "database": {
-		"name": "DBNAME",
-		"user": "DBUSER",
+	"name": "DBNAME",
+	"user": "DBUSER",
         "password": "DBPASSWORD"
     },
     "host": "127.0.0.1",
