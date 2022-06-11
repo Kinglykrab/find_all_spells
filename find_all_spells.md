@@ -1,8 +1,4 @@
-!!! info end
-
-    This page lists spells for classes between level 71 and 253, we stop at 253 as 254 and 255 are special values used for AAs.
-
-    Last Generated: 2022.06.10
+This page lists spells for classes between level 71 and 253, we stop at 253 as 254 and 255 are special values used for AAs.
 
 ## Warrior
 | ID | Name | Level |
@@ -9753,4 +9749,3 @@
 | 40579 | Arcblade | 99 |
 | 40580 | Arcblade Rk. II | 99 |
 | 40581 | Arcblade Rk. III | 99 |
-
