@@ -98,7 +98,7 @@ func main() {
 		return classSpellsData[i].ClassID < classSpellsData[j].ClassID
 	})
 
-	for classID, currentSpellsList := range classSpellsData {
+	for classIndex, currentSpellsList := range classSpellsData {
 		spellsData += fmt.Sprintf("## %v\n", getClassName(currentSpellsList.ClassID))
 
 		spellsData += "| ID | Name | Level |\n"
@@ -109,7 +109,7 @@ func main() {
 			spellsData += fmt.Sprintf("| %v | %v | %v |\n", currentSpell.ID, currentSpell.Name, currentSpell.ClassLevel)
 		}
 
-		if classID != 16 {
+		if classIndex != 15 {
 			spellsData += "\n"
 		}
 	}
