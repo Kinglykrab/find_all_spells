@@ -67,6 +67,8 @@ func main() {
 	for classID := 1; classID <= 16; classID++ {
 		classIndex := classID - 1
 
+		classSpellsData[classIndex].ClassID = classID
+
 		query := fmt.Sprintf(
 			"SELECT id, `name`, classes%v FROM spells_new WHERE classes%v BETWEEN 71 AND 253",
 			classID,
@@ -89,7 +91,6 @@ func main() {
 				fmt.Println(err)
 			}
 
-			classSpellsData[classIndex].ClassID = classID
 			classSpellsData[classIndex].Spells = append(classSpellsData[classIndex].Spells, currentSpell)
 		}
 	}
